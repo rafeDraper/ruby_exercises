@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 # this thing is for MiniTest
 class Rsort
   def self.bubble_sort(array)
     repeat = array.length
-  loop do
+    loop do
       change = false
       (repeat - 1).times do |number|
         if array[number] > array[number + 1]
@@ -10,7 +12,8 @@ class Rsort
           change = true
         end
       end
-    break unless change end
+      break unless change
+    end
     array
   end
 
@@ -25,4 +28,3 @@ class Rsort
     array
   end
 end
-
