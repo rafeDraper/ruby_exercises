@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-
+require_relative 'node'
 # class
 class LinkedList
   def initalize
@@ -128,3 +128,19 @@ class LinkedList
     end
   end
 end
+
+test = Node.new(10)
+exam = LinkedList.new
+
+
+exam.append(test)
+exam.append(Node.new('diez'))
+exam.append(Node.new('zehn'))
+exam.prepend(Node.new(11))
+exam.prepend(Node.new('once'))
+exam.prepend(Node.new('elf'))
+p exam.size
+p exam.to_s
+p exam.head
+p exam.tail
+p exam.find(2)
