@@ -80,7 +80,7 @@ class LinkedList
   def find(value)
     i = 0
     actual_node = @head
-    until node.nil?
+    until actual_node.nil?
       return i if actual_node.value == value
 
       actual_node = actual_node.next_node
@@ -129,18 +129,13 @@ class LinkedList
   end
 end
 
+# examples: 
+
 test = Node.new(10)
 exam = LinkedList.new
-
-
 exam.append(test)
 exam.append(Node.new('diez'))
 exam.append(Node.new('zehn'))
 exam.prepend(Node.new(11))
 exam.prepend(Node.new('once'))
 exam.prepend(Node.new('elf'))
-p exam.size
-p exam.to_s
-p exam.head
-p exam.tail
-p exam.find(2)
