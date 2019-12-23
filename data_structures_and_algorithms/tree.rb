@@ -76,9 +76,35 @@ class BinarySearchTree
       pretty_print(node.left, "#{prefix}#{is_left ? '    ' : '│   '}", true)
     end
   end
+
+  def depth(node = root)
+    if node.nil?
+      0
+    else
+      left_depth  = depth(node.left)
+      right_depth = depth(node.right)
+      if left_depth > right_depth
+        left_depth + 1
+      else
+        right_depth + 1
+      end
+    end
+  end
+
+  def balanced?
+    left_depth = depth(root.left)
+    right_depth = depth(root.right)
+    (left_depth - right_depth).abs < 1
+  end
+
+  def rebalance
+    
+  end
 end
 
 tree = BinarySearchTree.new([1, 2, 3, 5, 15, 10])
 tree.insert(234)
+tree.insert(198)
+tree.find(5)
+puts tree.balanced?
 puts tree.pretty_print
-puts tree.find(5)
