@@ -104,7 +104,7 @@ class LinkedList
 
     if index == 0
       preppend(node)
-    elsif index == size
+    elsif index == size - 1
       append(node)
     else
       prev_node = at(index-1)
