@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 # Module recreation for learning pourposes
-
 module Enumerable
   def my_each
     i = 0
@@ -56,7 +55,7 @@ module Enumerable
       result = my_select { |el| el == arg }
     else
       return length
-        end
+    end
     result.size
   end
 
@@ -80,7 +79,7 @@ module Enumerable
       if args[0].class == Symbol
         memo = self[0]
         my_each_with_index do |e, i|
-          next if i == 0
+          next if i.zero?
 
           memo = memo.method(args[0]).call(e)
         end
@@ -98,7 +97,7 @@ module Enumerable
     else
       memo = self[0]
       my_each_with_index do |e, i|
-        next if i == 0
+        next if i.zero?
 
         memo = yield(memo, e)
       end
@@ -107,7 +106,9 @@ module Enumerable
   end
 end
 
-## Test your #my_inject by creating a method called #multiply_els which multiplies all the elements of the array together by using #my_inject, e.g. multiply_els([2,4,5]) #=> 40
+## Test your #my_inject by creating a method called #multiply_els which
+## multiplies all the elements of the array together by using #my_inject,
+## e.g. multiply_els([2,4,5])
 
 def multiply_els(array)
   array.my_inject { |product, power| product * power }
