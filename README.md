@@ -9,9 +9,9 @@ List of Ruby exercises done for the OP curriculum.
 4.- Event Manager
 
 5.- Terminal Games:
-    hangman
-    master mind
-    stock picker
+    hangman |
+    master mind |
+    stock picker |
     tic tac toe
 
 6.- Movie Selector
