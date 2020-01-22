@@ -1,26 +1,26 @@
 List of Ruby exercises done for the OP curriculum. 
 
-1.- Bubble Sort
+01.- Bubble Sort
 
-2.- Caesar's Cipher
+02.- Caesar's Cipher
 
-3.- Data Structures
+03.- Data Structures
 
-4.- Event Manager
+04.- Event Manager
 
-5.- Terminal Games:
+05.- Terminal Games:
     hangman |
     master mind |
     stock picker |
     tic tac toe
 
-6.- Movie Selector
+06.- Movie Selector
 
-7.- Methods Cardio
+07.- Methods Cardio
 
-8.- Object Oriented Exercise
+08.- Object Oriented Exercise
 
-9.- Recursion
+09.- Recursion
 
 10.- Testing with Rspec
 
