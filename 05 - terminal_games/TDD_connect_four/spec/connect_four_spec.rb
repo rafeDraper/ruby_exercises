@@ -1,3 +1,1 @@
-require './app'
-
-RSpec.describe 
+# frozen_string_literal: true

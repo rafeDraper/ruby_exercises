@@ -1,15 +1,25 @@
-require_relative '/board'
+require_relative './board'
 
 # game class
 class ConnectFour
+  attr_accessor :player_one, :player_two
+  attr_reader :opportunities
+
   def initialize
     @board = Board.new
-    @player1 = player1
-    @player2 = player2
+    @player_one = player_one
+    @player_two = player_two
+    @opportunities = 10
   end
 
-  def player_turn(column_number)
+  def player_pick(row_number)
     # player choose a column to drop a peg
-    comlpete_board[column_number]
+    board << row_number
+  end
+
+  def check_board
+  end
+  
+  def play_game
   end
 end
